@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Uplabh-orders</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap:Begin -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bs/css/bootstrap.css"/> 
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="bs/js/bootstrap.js"></script>
+	<!-- Bootstrap:End -->
+
+	<!--Uplabh css:Start-->
+		<link rel="stylesheet" href="css/push.css"/>	
+		<link rel="stylesheet" href="css/account.css"/>	
+	<!--Uplabh css:End-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Uplabh</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Push</a></li>
+        <li><a href="orders.html">Orders</a></li> 
+        <li class="active"><a href="account.html">Account</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="push-container" class="container">
+  <div class="row">
+    <div id="account-menu" class="col-sm-2">
+		<ul class="account-ul">
+			<li class="account-li clickable">
+        <a href="account.html" class="no-formatted-link">
+				Profile	
+        </a>
+			</li>
+			<li class="account-li clickable active">
+        <a href="subscription.html"  class="no-formatted-link">
+				Subscription
+        </a>
+			</li>
+			<li class="account-li clickable">
+				Wallet	
+			</li>
+			<li class="account-li clickable">
+				Products	
+			</li>
+			<li class="account-li clickable">
+				Retailers	
+			</li>
+		</ul>
+    </div>
+    <div id="account-description" class="col-sm-10">
+    	<div id="account-description-details">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Toggle</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>username-1</td>
+            <td>Admin</td>
+            <td class="text-primary">Active</td>
+            <td><span class="glyphicon glyphicon-pause clickable"></span></td>
+            <td><span class="glyphicon glyphicon-remove clickable"></span></td>
+          </tr>
+          <tr>
+            <td>username-2</td>
+            <td>Staff</td>
+            <td class="text-primary">Active</td>
+            <td><span class="glyphicon glyphicon-pause clickable"></span></td>
+            <td><span class="glyphicon glyphicon-remove clickable"></span></td>
+          </tr>
+          <tr>
+            <td>username-3</td>
+            <td>Staff</td>
+            <td class="text-danger">Suspended</td>
+            <td><span class="glyphicon glyphicon-play clickable"></span></td>
+            <td><span class="glyphicon glyphicon-remove clickable"></span></td>
+          </tr>
+          <tr>
+            <td>username-4</td>
+            <td>Staff</td>
+            <td class="text-danger">Suspended</td>
+            <td><span class="glyphicon glyphicon-play clickable"></span></td>
+            <td><span class="glyphicon glyphicon-remove clickable"></span></td>
+          </tr>
+          <tr>
+            <td>username-5</td>
+            <td>Staff</td>
+            <td class="text-muted">Deleted</td>
+            <td><span class="glyphicon glyphicon-play not-permitted"></span></td>
+            <td><span class="glyphicon glyphicon-remove not-permitted"></span></td>
+          </tr>
+        </tbody>
+      </table>
+    	</div>
+		<div class="account-description-footer-row">
+			<a href="subscription.html" class="btn btn-primary">Back</a>	
+		</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

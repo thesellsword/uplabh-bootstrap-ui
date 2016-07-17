@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Uplabh-orders</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap:Begin -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bs/css/bootstrap.css"/> 
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="bs/js/bootstrap.js"></script>
+	<!-- Bootstrap:End -->
+
+	<!--Uplabh css:Start-->
+		<link rel="stylesheet" href="css/push.css"/>	
+		<link rel="stylesheet" href="css/account.css"/>	
+	<!--Uplabh css:End-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Uplabh</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">Push</a></li>
+        <li class="active"><a href="../orders.html">Orders</a></li> 
+        <li><a href="../account.html">Account</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="push-container" class="container">
+  <div class="row">
+    <div id="push-stream" class="col-sm-4">
+    	<div class="push-stream-header">
+    		<span class="glyphicon glyphicon-star"> </span>
+    		<span class="glyphicon glyphicon-search"> </span>
+        </div>
+		<ul class="push-stream-ul">
+			<li class="push-stream-li">
+				<div class="push-retailer-name">Retailer 1</div>
+				<div class="push-details">
+					<div class="push-type bg-info">In-progress</div>
+					<div class="push-num-products">Products: 20</div>
+					<div class="push-time">18:23:45</div>
+				</div>
+			</li>
+			<li class="push-stream-li">
+				<div class="push-retailer-name li-starred">Retailer 2</div>
+				<div class="push-details">
+					<div class="push-type bg-info">In-progress</div>
+					<div class="push-num-products">Products: 20</div>
+					<div class="push-time">18:23:45</div>
+				</div>
+			</li>
+			<li class="push-stream-li">
+				<div class="push-retailer-name">Retailer 3</div>
+				<div class="push-details">
+					<div class="push-type bg-danger">Canceled</div>
+					<div class="push-num-products">Products: 20</div>
+					<div class="push-time">18:23:45</div>
+				</div>
+			</li>
+			<li class="push-stream-li">
+				<div class="push-retailer-name">Retailer 4</div>
+				<div class="push-details">
+					<div class="push-type bg-info">In-progress</div>
+					<div class="push-num-products">Products: 20</div>
+					<div class="push-time">18:23:45</div>
+				</div>
+			</li>
+			<li class="push-stream-li">
+				<div class="push-retailer-name">Retailer 5</div>
+				<div class="push-details">
+					<div class="push-type bg-danger">Canceled</div>
+					<div class="push-num-products">Products: 20</div>
+					<div class="push-time">18:23:45</div>
+				</div>
+			</li>
+			<li class="push-stream-li">
+				<div class="push-retailer-name">Retailer 6</div>
+				<div class="push-details">
+					<div class="push-type bg-success">Completed</div>
+					<div class="push-num-products">Products: 20</div>
+					<div class="push-time">18:23:45</div>
+				</div>
+			</li>
+			<li class="push-stream-li">
+				<div class="push-retailer-name">Retailer 7</div>
+				<div class="push-details">
+					<div class="push-type bg-success">Completed</div>
+					<div class="push-num-products">Products: 20</div>
+					<div class="push-time">18:23:45</div>
+				</div>
+			</li>
+			<li class="push-stream-li">
+				<div class="push-retailer-name">Retailer 8</div>
+				<div class="push-details">
+					<div class="push-type bg-success">Completed</div>
+					<div class="push-num-products">Products: 20</div>
+					<div class="push-time">18:23:45</div>
+				</div>
+			</li>
+			<li class="push-stream-li">
+				<div class="push-retailer-name">Retailer 9</div>
+				<div class="push-details">
+					<div class="push-type bg-success">Completed</div>
+					<div class="push-num-products">Products: 20</div>
+					<div class="push-time">18:23:45</div>
+				</div>
+			</li>
+			<li class="push-stream-li">
+				<div class="push-retailer-name">Retailer 10</div>
+				<div class="push-details">
+					<div class="push-type bg-success">Completed</div>
+					<div class="push-num-products">Products: 20</div>
+					<div class="push-time">18:23:45</div>
+				</div>
+			</li>
+		</ul>
+    </div>
+    <div id="push-description" class="col-sm-8">
+    	<div id="push-description-header">
+    		<div class="push-description-header-row">
+    			<div class="push-description-header-title">Retailer 1</div>
+    			<div class="push-description-header-detail">
+    				Order:  ##-###
+    			</div>	
+    			<div class="push-description-header-detail">
+    				Products: 6	
+    			</div>	
+    			<div class="push-description-header-detail">
+    				Commission: $XX.YY	
+    			</div>	
+    			<div class="push-description-header-detail">
+    				Created: HH:MM, DD:MM 	
+    			</div>	
+    		</div>
+    		<div class="push-description-header-row">
+    			<div class="push-description-header-title">Order Terms</div>
+    			<div class="push-description-header-detail">
+    				Mode:  credit	
+    			</div>	
+    			<div class="push-description-header-detail">
+    				Payment: 30	days
+    			</div>	
+    			<div class="push-description-header-detail">
+    				Discount: >3%	
+    			</div>	
+    			<div class="push-description-header-detail">
+    				Delivery: HH:MM, DD:MM 	
+    			</div>
+    		</div>
+    		<div class="push-description-header-row">
+    			<a href="#" class="btn btn-primary">Print Order</a>	
+    			<a href="#" class="btn btn-success">Complete</a>	
+    			<a href="#" class="btn btn-danger">Cancel</a>	
+    		</div>
+    	</div>
+    	<div id="push-description-details">
+    		<table class="table table-striped">
+	    		<thead>
+	    			<tr>
+	    				<th>Product</th>
+	    				<th>Company</th>
+	    				<th>Packaging</th>
+	    				<th>MRP</th>
+	    				<th>Quantity</th>
+	    				<th>Mode</th>
+	    				<th>Commission</th>
+	    			</tr>	
+	    		</thead>		
+	    		<tbody>
+	    			<tr>
+	    				<td>Product 1</td>
+	    				<td>Company 1</td>
+	    				<td>Pkg 1</td>
+	    				<td>Mrp 1</td>
+	    				<td>
+	    					10
+                        </td>
+	    				<td>
+	    					Partial	
+	    				</td>
+	    				<td>$ 5.00</td>
+	    			</tr>	
+	    			<tr>
+	    				<td>Product 1</td>
+	    				<td>Company 1</td>
+	    				<td>Pkg 1</td>
+	    				<td>Mrp 1</td>
+	    				<td>
+	    					10
+                        </td>
+	    				<td>
+	    					Full	
+	    				</td>
+	    				<td>$ 5.00</td>
+	    			</tr>	
+	    			<tr>
+	    				<td>Product 1</td>
+	    				<td>Company 1</td>
+	    				<td>Pkg 1</td>
+	    				<td>Mrp 1</td>
+	    				<td>
+	    					10
+                        </td>
+	    				<td>
+	    					Partial	
+	    				</td>
+	    				<td>$ 5.00</td>
+	    			</tr>	
+	    			<tr>
+	    				<td>Product 1</td>
+	    				<td>Company 1</td>
+	    				<td>Pkg 1</td>
+	    				<td>Mrp 1</td>
+	    				<td>
+	    					10
+                        </td>
+	    				<td>
+	    					Full	
+	    				</td>
+	    				<td>$ 5.00</td>
+	    			</tr>	
+	    			<tr>
+	    				<td>Product 1</td>
+	    				<td>Company 1</td>
+	    				<td>Pkg 1</td>
+	    				<td>Mrp 1</td>
+	    				<td>
+	    					10
+                        </td>
+	    				<td>
+	    					Partial	
+	    				</td>
+	    				<td>$ 5.00</td>
+	    			</tr>	
+	    			<tr>
+	    				<td>Product 1</td>
+	    				<td>Company 1</td>
+	    				<td>Pkg 1</td>
+	    				<td>Mrp 1</td>
+	    				<td>
+	    					10
+                        </td>
+	    				<td>
+	    					Full	
+	    				</td>
+	    				<td>$ 5.00</td>
+	    			</tr>	
+    		</table>	
+    	</div>
+    </div>
+  </div>
+  <div id="push-footer" class="row">
+  	<span id="push-footer-num-push">Pushes: 10</span>
+  	<span id="push-footer-status">1 Product/s locked</span>
+  </div>
+</div>
+</body>
+</html>

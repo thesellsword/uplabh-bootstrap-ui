@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Uplabh-orders</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap:Begin -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bs/css/bootstrap.css"/> 
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="bs/js/bootstrap.js"></script>
+	<!-- Bootstrap:End -->
+
+	<!--Uplabh css:Start-->
+		<link rel="stylesheet" href="css/push.css"/>	
+		<link rel="stylesheet" href="css/account.css"/>	
+	<!--Uplabh css:End-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Uplabh</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Push</a></li>
+        <li><a href="orders.html">Orders</a></li> 
+        <li class="active"><a href="account.html">Account</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="push-container" class="container">
+  <div class="row">
+    <div id="account-menu" class="col-sm-2">
+		<ul class="account-ul">
+			<li class="account-li clickable active">
+				<a href="account.html" class="no-formatted-link">
+					Profile	
+        		</a>	
+			</li>
+			<li class="account-li clickable">
+		        <a href="subscription.html"  class="no-formatted-link">
+					Subscription
+		        </a>
+			</li>
+			<li class="account-li clickable">
+		        <a href="wallet.html"  class="no-formatted-link">
+					Wallet	
+		        </a>
+			</li>
+			<li class="account-li clickable">
+				Products	
+			</li>
+			<li class="account-li clickable">
+				Retailers	
+			</li>
+		</ul>
+    </div>
+    <div id="account-description" class="col-sm-10">
+	    <div class="account-description-header">
+		<div class="account-description-header-row">
+			<div class="account-description-header-title">		User Id: xxxxxx
+			</div>
+			<div class="account-description-header-detail">
+				Created: HH:MM, DD:MM 	
+			</div>	
+			<div class="account-description-header-detail">
+				Last updated: HH:MM, DD:MM 	
+			</div>	
+		</div>
+		</div>
+    	<div id="account-description-details">
+    		<form role="form">
+    			<div class="form-group">
+    				<label for="name">Supplier Name:</label>
+    				<input type="text" class="form-control" id="name" readonly value="XXXXX">
+  				</div>
+    			<div class="form-group">
+    				<label for="pname">Proprietor Name:</label>
+    				<input type="text" class="form-control" id="pname" readonly value="XXXXX">
+  				</div>
+    			<div class="form-group">
+    				<label for="license">License:</label>
+    				<input type="text" class="form-control" readonly id="license"  value="YYY-ZZZZ-YY">
+  				</div>
+    			<div class="form-group">
+    				<label for="expiration">License Expiration:</label>
+    				<input type="text" class="form-control" id="expiration" readonly value="01/01/2016">
+  				</div>
+    			<div class="form-group">
+    				<label for="contact">Contact Person</label>
+    				<input type="text" class="form-control" id="contact">
+  				</div>
+    			<div class="form-group">
+    				<label for="mobile">Contact Number:</label>
+    				<input type="tel" class="form-control" id="mobile">
+  				</div>
+    			<div class="form-group">
+    				<label for="role">Role:</label>
+    				<select name="role" class="form-control" id="role">
+    					<option selected="">Admin</option>
+    					<option>Staff</option>	
+    				</select>
+  				</div>	
+    			<div class="form-group">
+    				<label for="address">Address</label>
+    				<textarea class="form-control" id="address"></textarea>
+  				</div>    			
+  				<div class="form-group">
+    				<label for="type">Type:</label>
+    				<select name="gender" class="form-control" id="type">
+    					<option selected>Ethical</option>
+    					<option>Surgical</option>	
+    				</select>
+  				</div>
+    		</form>	
+    	</div>
+		<div class="account-description-footer-row">
+			<a href="#" class="btn btn-success">Save</a>	
+			<a href="#" class="btn btn-primary">Change Password</a>	
+			<a href="#" class="btn btn-danger">Delete</a>
+		</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

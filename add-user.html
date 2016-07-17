@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Uplabh-orders</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap:Begin -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bs/css/bootstrap.css"/> 
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="bs/js/bootstrap.js"></script>
+	<!-- Bootstrap:End -->
+
+	<!--Uplabh css:Start-->
+		<link rel="stylesheet" href="css/push.css"/>	
+		<link rel="stylesheet" href="css/account.css"/>	
+	<!--Uplabh css:End-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Uplabh</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Push</a></li>
+        <li><a href="orders.html">Orders</a></li> 
+        <li class="active"><a href="account.html">Account</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="push-container" class="container">
+  <div class="row">
+    <div id="account-menu" class="col-sm-2">
+		<ul class="account-ul">
+			<li class="account-li clickable">
+        <a href="account.html" class="no-formatted-link">
+				Profile	
+        </a>
+			</li>
+			<li class="account-li clickable active">
+        <a href="subscription.html"  class="no-formatted-link">
+				Subscription
+        </a>
+			</li>
+			<li class="account-li clickable">
+				Wallet	
+			</li>
+			<li class="account-li clickable">
+				Products	
+			</li>
+			<li class="account-li clickable">
+				Retailers	
+			</li>
+		</ul>
+    </div>
+    <div id="account-description" class="col-sm-10">
+    	<div id="account-description-details">
+              <form role="form">
+          <div class="form-group">
+            <label for="Email">Email:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" class="form-control" id="first-name">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" class="form-control" id="last-name">
+          </div>
+          <div class="form-group">
+            <label for="mobile">Mobile:</label>
+            <input type="tel" class="form-control" id="mobile">
+          </div>
+          <div class="form-group">
+            <label for="dob">Date of  Birth:</label>
+            <input type="date" class="form-control" id="dob">
+          </div>
+          <div class="form-group">
+            <label for="role">Role:</label>
+            <select name="role" class="form-control" id="role">
+              <option selected="">Admin</option>
+              <option>Staff</option>  
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="aemail">Altername-Email:</label>
+            <input type="email" class="form-control" id="aemail">
+          </div>          
+          <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select name="gender" class="form-control" id="gender">
+              <option selected="">Male</option>
+              <option>Female</option> 
+            </select>
+          </div>
+        </form> 
+    	</div>
+		<div class="account-description-footer-row">
+			<a href="subscription.html" class="btn btn-primary">Back</a>	
+		</div>
+    </div>
+  </div>
+  <div id="push-footer" class="row">
+  	<span id="push-footer-num-push">Pushes: 10</span>
+  	<span id="push-footer-status">1 Product/s locked</span>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+@import 'base';
+
+#account-menu {
+	@extend .left-container; 	
+}
+
+#account-container {
+	@extend .the-container;
+}
+
+.account-ul {
+	@extend .nolist;
+	height: 100%;	
+}
+
+.account-li {
+	padding: 5px 10px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.account-li::before {
+	content:"\e258";
+	font-family: 'Glyphicons Halflings';
+    font-size: 18px;
+    float: left;
+    margin-left: -15px;
+    margin-right: 10px;
+}
+
+.account-li:hover {
+	transform: translate(10px, 0px);
+}
+
+.account-ul>.active{
+	color: $active-color; 
+	transform: translate(10px, 0px);
+}
+
+#account-description {
+	@extend .right-container;
+}
+
+#account-description-header {
+	@extend .right-container-header;
+}
+
+.account-description-header-row {
+	@extend .right-container-header-row;
+	@extend .blurred-bottom-border;
+}
+
+#account-description-details {
+	@extend .right-container-description;	
+}
+
+#account-description-footer {
+	@extend .right-container-header;
+}
+
+.account-description-footer-row {
+	@extend .right-container-header-row;
+}
+
+.account-description-header-title {
+	font-weight: bold;
+}

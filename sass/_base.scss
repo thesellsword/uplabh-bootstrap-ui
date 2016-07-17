@@ -1,0 +1,121 @@
+$font-face: Pala, sans-serif;
+$font-sub-heading: 18px $font-face;
+
+// Constants
+$container-height: 500px;
+$left-container-height: 500px;
+$right-container-height: 500px;
+$container-color: #EEE;
+$left-container-color: #D8D8D8;
+$right-container-color: #EEE;
+$border-color: #CCC;
+$ody-background-color: #E8E8E8;
+$box-shadow-color: #AAA;
+
+// Push 
+$push-grid-height: $right-container-height;
+$push-container-color: $container-color;
+
+$active-color: #82dec7;
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #E8E8E8;
+}
+
+.the-container {
+	box-shadow: 0px 0px 30px $box-shadow-color;
+	min-height: $container-height;
+	max-height: $container-height;
+}
+
+.left-container {
+	background-color: $left-container-color;
+	min-height: $left-container-height;
+	max-height: $left-container-height;
+	overflow-y: auto;	
+}
+
+.blurred-bottom-border {
+	border-bottom: $border-color;
+	box-shadow: 0px 4px 2px -2px #FFF;
+}
+
+
+.right-container {
+	min-height: $right-container-height;
+	max-height: $right-container-height;
+	display: flex;
+	flex-direction: column;
+}
+
+.right-container-header {
+	display: flex;
+	flex-direction: column;
+}
+
+.right-container-header-row {
+	display: flex;
+	padding: 2px 5px;
+	margin: 2px 2px;
+	max-width: 100%;
+	justify-content: space-around;
+}
+
+.right-container-header-row > *{
+	height: 100%;
+}
+
+.right-container-description {
+	overflow: auto;
+	flex: 1 1 auto;
+}
+
+.nolist {
+	list-style-type: none;
+	padding: 5px 10px;	
+}
+
+.no-formatted-link:hover, 
+.no-formatted-link:active,
+.no-formatted-link:focus,
+.no-formatted-link:visited,
+.no-formatted-link{
+	text-decoration: none;
+	color: inherit !important;		
+}
+
+.li-unstarred::before {
+	content:"\e007";
+	font-family: 'Glyphicons Halflings';
+    font-size: 18px;
+    float: left;
+    margin-top: 10px;
+    margin-left: -15px;
+    margin-right: 10px;
+    color: darken($left-container-color, 50%); 
+    cursor: pointer;
+}
+
+.li-starred::before {
+	content:"\e006"  !important; 
+	font-family: 'Glyphicons Halflings';
+    font-size: 18px;
+    float: left;
+    margin-top: 10px;
+    margin-left: -15px;
+    color: darken($left-container-color, 75%) !important; 
+    cursor: pointer;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.not-permitted {
+	cursor:not-allowed; 
+}

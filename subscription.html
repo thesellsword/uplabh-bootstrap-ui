@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Uplabh-orders</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap:Begin -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bs/css/bootstrap.css"/> 
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="bs/js/bootstrap.js"></script>
+	<!-- Bootstrap:End -->
+
+	<!--Uplabh css:Start-->
+		<link rel="stylesheet" href="css/push.css"/>	
+		<link rel="stylesheet" href="css/account.css"/>	
+	<!--Uplabh css:End-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Uplabh</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">Push</a></li>
+        <li><a href="../orders.html">Orders</a></li> 
+        <li class="active"><a href="../account.html">Account</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="push-container" class="container">
+  <div class="row">
+    <div id="account-menu" class="col-sm-2">
+		<ul class="account-ul">
+			<li class="account-li clickable">
+        <a href="account.html" class="no-formatted-link">
+				Profile	
+        </a>
+			</li>
+			<li class="account-li clickable active">
+        <a href="subscription.html"  class="no-formatted-link">
+				Subscription
+        </a>
+			</li>
+			<li class="account-li clickable">
+        <a href="wallet.html"  class="no-formatted-link">
+        Wallet  
+        </a>
+			</li>
+			<li class="account-li clickable">
+				Products	
+			</li>
+			<li class="account-li clickable">
+				Retailers	
+			</li>
+		</ul>
+    </div>
+    <div id="account-description" class="col-sm-10">
+    <div class="account-description-header">
+  		<div class="account-description-header-row">
+  			<div class="account-description-header-title">
+        Customer Id: xxxxxx
+  			</div>
+  			<div class="account-description-header-detail">
+  				Created: HH:MM, DD:MM 	
+  			</div>	
+  			<div class="account-description-header-detail">
+  				Last updated: HH:MM, DD:MM 	
+  			</div>	
+        <div class="account-description-header-detail">
+          Valid till: HH:MM, DD:MM  
+        </div>  
+      </div>
+      <div class="account-description-header-row">
+        <div class="account-description-header-detail">
+          Users created: 2 
+        </div>  
+        <div class="account-description-header-detail">
+          Users active: 2  
+        </div>  
+        <div class="account-description-header-detail">
+          Monthly Fee: $ XX.YY 
+        </div>  
+      </div>
+		</div>
+    	<div id="account-description-details">
+    		<form role="form">
+    			<div class="form-group">
+    				<label for="type">Product Type</label>
+            <select name="type" class="form-control" id="type">
+              <option selected="">Ethical</option>
+              <option>Surgical</option>  
+            </select>
+  				</div>
+    			<div class="form-group">
+    				<label for="phone">Phone Numbers</label>
+            <select multiple name="phone" class="form-control" id="phone">
+              <option>XXX-YYY-ZZZZ</option>
+              <option>XXX-YYY-ZZZZ</option>  
+              <option>XXX-YYY-ZZZZ</option>
+              <option>XXX-YYY-ZZZZ</option>
+              <option>XXX-YYY-ZZZZ</option>  
+              <option>XXX-YYY-ZZZZ</option>  
+            </select>
+  				</div>
+    			<div class="form-group">
+    				<label for="subscription">Subscription</label>
+            <select name="subscription" class="form-control" id="subcription">
+              <option selected="">Standard</option>
+              <option>Premium</option>  
+            </select>
+  				</div>
+    			<div class="form-group">
+    				<label for="limit">Listing Limit</label>
+    				<input type="number" min="100" max="10000" class="form-control" id="limit">
+  				</div>
+    		</form>
+    	</div>
+		<div class="account-description-footer-row">
+			<a href="#" class="btn btn-primary">Save</a>	
+			<a href="list-users.html" class="btn btn-primary">List</a>	
+			<a href="add-user.html" class="btn btn-primary">Add</a>
+		</div>
+    </div>
+  </div>
+  <div id="push-footer" class="row">
+  	<span id="push-footer-num-push">Pushes: 10</span>
+  	<span id="push-footer-status">1 Product/s locked</span>
+  </div>
+</div>
+</body>
+</html>
